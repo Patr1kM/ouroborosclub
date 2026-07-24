@@ -61,10 +61,10 @@
   }
   .avatar, .club-logo{
     width:96px; height:96px;
-    border-radius:50%;
     flex-shrink:0;
   }
   .avatar{
+    border-radius:50%;
     background:linear-gradient(160deg, var(--cognac), var(--oxblood));
     display:flex; align-items:center; justify-content:center;
     font-family:'Cormorant Garamond', serif;
@@ -77,15 +77,8 @@
     width:100%; height:100%; object-fit:cover;
   }
   .club-logo{
-    border:1px dashed var(--line);
     display:flex; align-items:center; justify-content:center;
-    text-align:center;
-    font-size:9.5px;
-    letter-spacing:0.5px;
-    text-transform:uppercase;
-    color:var(--gold-soft);
-    line-height:1.3;
-    padding:4px;
+    object-fit:contain;
   }
   /* once your real logo is ready, replace .club-logo div with:
      <img src="logo.png" class="club-logo" style="border:none; object-fit:contain; border-radius:0;">
@@ -188,11 +181,11 @@
 <div class="card">
 
   <div class="top-row">
-    <!-- AVATAR: swap the initials text for an <img> tag with your photo when ready -->
-    <div class="avatar">PX</div>
+    <!-- AVATAR: crop your photo square, name it photo.jpg, upload into this member's folder -->
+    <div class="avatar"><img src="photo.jpg" alt=""></div>
 
-    <!-- CLUB LOGO PLACEHOLDER: replace with <img src="logo.png"> once ready -->
-    <div class="club-logo">OUROBOROS<br>CLUB</div>
+    <!-- CLUB LOGO: square PNG, transparent background, uploaded once to repo root as logo.png -->
+    <img src="/logo.png" class="club-logo" alt="">
   </div>
 
   <div class="first-name">Patrik</div>
