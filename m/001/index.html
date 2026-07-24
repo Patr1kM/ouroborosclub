@@ -81,21 +81,30 @@
     object-fit:contain;
   }
 
-  /* NAME: first above last, stacked, centered */
-  .first-name{
+  /* NAME: first and last side by side in one row, centered */
+  .name-row{
+    display:flex;
+    justify-content:center;
+    align-items:baseline;
+    gap:8px;
+    margin-bottom:6px;
+  }
+  .first-name, .last-name{
     font-family:'Cormorant Garamond', serif;
     font-size:26px; font-weight:600;
     letter-spacing:0.5px;
     color:var(--ivory);
     line-height:1.15;
   }
-  .last-name{
-    font-family:'Cormorant Garamond', serif;
-    font-size:26px; font-weight:600;
-    letter-spacing:0.5px;
-    color:var(--ivory);
-    line-height:1.15;
-    margin-bottom:8px;
+
+  /* STATUS / LEVEL LABEL: placeholder text, freely editable, color set via --status-color */
+  .status-label{
+    font-size:12px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    font-weight:600;
+    color:var(--status-color, var(--gold));
+    margin-bottom:14px;
   }
 
   .location{
@@ -185,8 +194,13 @@
     <img src="/ouroborosclub/logo.png" class="club-logo" alt="">
   </div>
 
-  <div class="first-name">Patrik</div>
-  <div class="last-name">Mitók</div>
+  <div class="name-row">
+    <div class="first-name">Patrik</div>
+    <div class="last-name">Mitók</div>
+  </div>
+
+  <!-- STATUS / LEVEL LABEL: placeholder for now, freely editable text + color -->
+  <div class="status-label" style="--status-color:#c9a24b;">Lorem Ipsum</div>
 
   <div class="location">Hungary, Switzerland, Bangkok</div>
 
@@ -215,7 +229,7 @@
 
   <!-- CONTACT GRID: 2 columns. Delete any block you don't need, or add a 5th/6th for 3 columns -->
   <div class="socials">
-    <a class="social-link" href="https://linkedin.com/in/patrik-mitok" target="_blank">
+    <a class="social-link" href="https://linkedin.com/in/patrikmitok" target="_blank">
       <span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.1 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg></span>
       <span class="label">LinkedIn</span>
     </a>
