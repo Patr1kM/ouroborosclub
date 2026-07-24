@@ -1,4 +1,3 @@
-# ouroborosclub
 # Ouroboros Club — Member Card Reference
 
 How to update a member's card. The physical NFC card never needs to be
@@ -37,7 +36,8 @@ Only needs to be done once — every member page already points to it.
 | Field | Find this line | Edit |
 |---|---|---|
 | First name | `<div class="first-name">Patrik</div>` | replace name |
-| Last name | `<div class="last-name">[Surname]</div>` | replace surname |
+| Last name | `<div class="last-name">Mitók</div>` | replace surname |
+| Status / level label | `<div class="status-label" style="--status-color:#c9a24b;">Lorem Ipsum</div>` | replace the text between the tags for the label; replace the hex code after `--status-color:` to change its color (currently gold, `#c9a24b`) |
 | Location | `<div class="location">Bangkok · Hungarian / Swiss-Italian</div>` | replace text |
 | Summary | `<div class="summary"> Founder of Blue Sail Branding... </div>` | replace both sentences |
 | Role | 1st `<div class="detail-value">Founder of Blue Sail Branding</div>` | replace |
