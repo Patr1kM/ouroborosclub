@@ -88,3 +88,17 @@ before relying on the physical card.
 - The logo only needs uploading once, ever, at the repo root.
 - Changing content never requires rewriting the physical card. Only
   rewrite a card if the folder path itself changes.
+
+## Ranks
+
+# Ouroboros Club — Rank System
+
+| Rank | Hex | Chip Value | Members |
+|------|-----|-----------|---------|
+| Ivory | `#F5F0E8` | $10,000 | 20–30 |
+| Silver | `#C0C0C0` | $50,000 | 20–30 |
+| Crimson | `#8B1A1A` | $250,000 | 15–20 |
+| Midnight | `#1B2A4A` | $1,250,000 | 8–12 |
+| Purple | `#3B1F5E` | $10,000,000 | 4–6 |
+| Obsidian | `#1A1A18` | $100,000,000 | 4 |
+| Gold | `#C9A050` | Priceless | 1 |
