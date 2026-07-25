@@ -37,7 +37,27 @@ Only needs to be done once — every member page already points to it.
 |---|---|---|
 | First name | `<div class="first-name">Patrik</div>` | replace name |
 | Last name | `<div class="last-name">Mitók</div>` | replace surname |
-| Status / level label | `<div class="status-label" style="--status-color:#c9a24b;">Lorem Ipsum</div>` | replace the text between the tags for the label; replace the hex code after `--status-color:` to change its color (currently gold, `#c9a24b`) |
+| Status / level label | `<div class="status-label chip-dark" style="--status-color:#c9a24b;">Lorem Ipsum</div>` | replace the text between the tags for the label; replace the hex code after `--status-color:` to change its color. **Also switch the class** — see the table below for which class pairs with which color. |
+
+### Status label — approved color palette and which chip to use
+
+The badge has two fixed background variants. Pick the one that matches your color — this is what keeps every color legible, since one background can't work for both very light and very dark text.
+
+| Color | Hex | Class to use |
+|---|---|---|
+| Ivory | `#F5F0E8` | `chip-dark` |
+| Silver | `#C0C0C0` | `chip-dark` |
+| Gold | `#C9A050` | `chip-dark` |
+| Oxblood | `#8B1A1A` | `chip-light` |
+| Dark green | `#1B3A2A` | `chip-light` |
+| Navy | `#1A3060` | `chip-light` |
+| Deep purple | `#2A1040` | `chip-light` |
+
+Example — switching to oxblood:
+```html
+<div class="status-label chip-light" style="--status-color:#8B1A1A;">Lorem Ipsum</div>
+```
+Note both things changed: the hex code **and** the class (`chip-dark` → `chip-light`), because oxblood is a dark color and needs the light-background chip to stay visible. Forgetting to switch the class is the most likely mistake here — the color will still technically apply, but contrast will suffer.
 | Location | `<div class="location">Bangkok · Hungarian / Swiss-Italian</div>` | replace text |
 | Summary | `<div class="summary"> Founder of Blue Sail Branding... </div>` | replace both sentences |
 | Role | 1st `<div class="detail-value">Founder of Blue Sail Branding</div>` | replace |
@@ -89,16 +109,14 @@ before relying on the physical card.
 - Changing content never requires rewriting the physical card. Only
   rewrite a card if the folder path itself changes.
 
-## Ranks
-
-# Ouroboros Club — Rank System
+  # Ouroboros Club — Rank System
 
 | Rank | Hex | Chip Value | Members |
 |------|-----|-----------|---------|
 | Ivory | `#F5F0E8` | $10,000 | 20–30 |
 | Silver | `#C0C0C0` | $50,000 | 20–30 |
 | Crimson | `#8B1A1A` | $250,000 | 15–20 |
-| Midnight | `#1B2A4A` | $1,250,000 | 8–12 |
-| Purple | `#3B1F5E` | $10,000,000 | 4–6 |
-| Obsidian | `#1A1A18` | $100,000,000 | 4 |
+| Forest | `#1B3A2A` | $1,250,000 | 8–12 |
+| Midnight | `#1A3060` | $10,000,000 | 4–6 |
+| Obsidian | `#2A1040` | $100,000,000 | 4 |
 | Gold | `#C9A050` | Priceless | 1 |
