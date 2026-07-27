@@ -48,10 +48,10 @@ The badge has two fixed background variants. Pick the one that matches your colo
 | Ivory | `#F5F0E8` | `chip-dark` |
 | Silver | `#C0C0C0` | `chip-dark` |
 | Gold | `#C9A050` | `chip-dark` |
-| Oxblood | `#8B1A1A` | `chip-light` |
-| Dark green | `#1B3A2A` | `chip-light` |
-| Navy | `#1A3060` | `chip-light` |
-| Deep purple | `#2A1040` | `chip-light` |
+| Chrimson | `#8B1A1A` | `chip-light` |
+| Forest | `#1B3A2A` | `chip-light` |
+| Midnight | `#1A3060` | `chip-light` |
+| Obsidian | `#2A1040` | `chip-light` |
 
 Example — switching to oxblood:
 ```html
